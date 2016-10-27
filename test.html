@@ -1,1 +1,23 @@
-daniel ramos
+<!doctype html>
+<script>
+var n=parseInt(prompt('número'));
+var p=0
+for(var c=1;c<=n;c++){
+if (n%c==0){
+p=p+1;
+}
+}
+if(p>0||n==1||n==2){
+document.write ('É Primo!');
+}else{
+document.write ('Não é Primo!<br>Os divisores são:');
+}
+if(n%c==0){
+document.write (c+',');
+}
+for (var c=1;c<=n;c++){
+if (n%c==0){
+document.write ('<br>'+n+'/'+c+' = '+n/c);
+}
+}
+</script>
